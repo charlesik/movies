@@ -7,14 +7,14 @@ export default function Movies() {
     const [series,setSeries]=useState([]);
     useEffect(() => {
         fetch(
-          " http://www.omdbapi.com/?s=action&type=movie&apikey=bfaccdb0"
+          " https://www.omdbapi.com/?s=action&type=movie&apikey=bfaccdb0"
         )
           .then((res) => res.json())
           .then((data) => setMovies(data.Search));
       }, []);
       useEffect(() => {
         fetch(
-          " http://www.omdbapi.com/?s=action&type=series&apikey=bfaccdb0"
+          " https://www.omdbapi.com/?s=action&type=series&apikey=bfaccdb0"
         )
           .then((res) => res.json())
           .then((data) => setSeries(data.Search));

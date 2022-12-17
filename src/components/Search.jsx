@@ -6,7 +6,7 @@ export default function Search() {
   const[searchInput,setSearchInput]=useState('');
   useEffect(() => {
     fetch(
-      ` http://www.omdbapi.com/?t=${searchInput}&type=movie&apikey=bfaccdb0`
+      ` https://www.omdbapi.com/?t=${searchInput}&type=movie&apikey=bfaccdb0`
     )
       .then((res) => res.json())
       .then((data) => setSearch(data));
