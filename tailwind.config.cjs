@@ -14,7 +14,7 @@ module.exports = {
         '3h':"300px"
       },
       backgroundImage:{
-        herobg:" url(/Rectangle 5.png)"
+        herobg:"url('/Rectangle 5.png')"
       },
       width:{
         90:"95%",
